@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div id="game-list">
+        <div class="data">
+            <input type="text" placeholder="Game Name" class="game_name">
+            <input type="text" placeholder="Name" class="user_name">
+            <input type="email" placeholder="Email" class="user_email">
+            <button onclick="createGame(event)">Create Game</button>
+        </div>
+        <div class="data_list">
+            <div class="title-list">
+                <div>Game Name</div>
+                <div>User Name</div>
+            </div>
+            <div class="lists"></div>
+        </div>
+    </div>
+    <div id="container">
+        <div class="second_cont">
+            <div class="numbers">
+                
+            </div>
+            <div class="card">
+                <div class="card_row1"></div>
+                <div class="card_row2"></div>
+                <div class="card_row3"></div>
+            </div>
+            <div class="btts">
+                <button class="play_click" onclick="playGame(event)">Play</button>
+                <button class="stop_click" onclick="stopGame(event)">Stop</button>
+                <button class="try_again" onclick="newGame(event)">Try Again</button>
+            </div>
+            <div class="game-over"></div>
+        </div>
+        <div class="calling_numbers"></div>
+    </div>
+    <script src="./js/requests.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
